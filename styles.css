@@ -27,10 +27,6 @@ body {
     margin-left: 10px;
 }
 
-section {
-    min-height: 90vh;
-}
-
 .nav-container {
     display: flex;
     align-items: center;
@@ -135,10 +131,9 @@ section {
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    gap: 2rem;
-    padding: 4rem 3rem;
+    margin: auto;
+    padding: 4rem 4rem;
     max-width: 1200px;
-    margin: 77px auto;
     background-color: #FFCFCF;
     font-family: 'Cousine', serif;
 }
@@ -286,6 +281,54 @@ textarea {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        flex-direction: column;
+        text-align: right;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .hero-title {
+        font-size: 2.3rem;
+        line-height: 1.2;
+        margin: 3rem;
+        text-align: justify;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features {
+        padding: 5rem 1rem 5rem 1rem;
+        max-width: 1200px;
+    }
+
+    .feature-title {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .avatar-group {
+        text-align: center;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
     #contactForm {
         width: 100%;
         padding: 1.5rem;
@@ -336,6 +379,7 @@ footer {
     font-size: 1.5rem;
     margin: 1.5rem auto 0 auto;
 }
+
 footer ul {
     display: flex;
     flex-direction: row;
@@ -343,7 +387,7 @@ footer ul {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    }
+}
 
 footer ul li {
     margin: 0.5rem;
@@ -457,10 +501,21 @@ nav .logo {
 
 
 @media (max-width: 768px) {
+
     .hero {
         flex-direction: column;
         text-align: center;
         height: max-content;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hide-on-mobile {
+        display: none;
     }
 
     .hero-content {
@@ -468,7 +523,7 @@ nav .logo {
     }
 
     .hero-image {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     .feature-block {
@@ -483,6 +538,7 @@ nav .logo {
     .feature-text {
         max-width: 100%;
     }
+
     .features {
         flex-direction: column;
         align-items: center;
