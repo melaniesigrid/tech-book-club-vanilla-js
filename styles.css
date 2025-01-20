@@ -47,7 +47,7 @@ section {
     justify-content: space-between;
     overflow: hidden;
     gap: 2rem;
-    padding: 0 80px;
+    padding: 40px 80px;
     background-image: url('images/pattern-light-bg.svg');
     background-size: cover;
     background-position: center;
