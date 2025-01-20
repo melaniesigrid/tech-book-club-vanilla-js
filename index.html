@@ -56,9 +56,9 @@
                 Get curated recommendations, join vibrant discussions, and level up
                 your skills one chapter at a time.
             </p>
-            <button class="hero-button">REVIEW MEMBERSHIP OPTIONS ↓</button>
+            <button class="hero-button" aria-label="View Membership Options">REVIEW MEMBERSHIP OPTIONS ↓</button>
             <div class="hero-stats">
-                <img src="images/image-avatars.webp" alt="Users joined" class="avatar-group">
+                <img src="images/image-avatars.webp" alt="A group of users who joined the book club" class="avatar-group">
                 <span class="star-rating">⭐⭐⭐⭐⭐</span>
                 <p class="hero-joined-text">200+ developers joined already</p>
             </div>
@@ -66,7 +66,7 @@
         <div class="hero-image">
             <picture>
                 <source srcset="images/image-hero-mobile.webp" media="(max-width: 768px)">
-                <img src="images/image-hero-desktop.webp" alt="People discussing books">
+                <img src="images/image-hero-desktop.webp" alt="Three people discussing technology books in a modern workspace.">
             </picture>
         </div>
     </section>
@@ -82,27 +82,24 @@
             <div class="feature-text">
                 <h2 class="feature-title">Read together, <br> grow together</h2>
                 <ul class="feature-list">
-                    <li>✔️ Monthly curated tech reads selected by industry experts</li>
-                    <li>✔️ Virtual and in-person meetups for deep-dive discussions</li>
-                    <li>✔️ Early access to new tech book releases</li>
-                    <li>✔️ Author Q&A sessions with tech thought leaders</li>
+                    <li>✔️ Monthly curated tech reads selected by industry experts.</li>
+                    <br>
+                    <li>✔️ Virtual and in-person meetups for deep-dive discussions.</li>
+                    <br>
+                    <li>✔️ Early access to new tech book releases.</li>
+                    <br>
+                    <li>✔️ Author Q&A sessions with tech thought leaders.</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+        <h2 class="contact-title">Contact Us</h2>
         <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-
+            <label for="name">Name: <input type="text" id="name" name="name" aria-required="true"></label>
+            <label for="email">Email: <input type="email" id="email" name="email" aria-required="true"></label>
+            <label for="message">Message: <textarea id="message" name="message" aria-required="true"></textarea></label>
             <button type="submit" class="hero-button">Submit</button>
             <p id="error-message" class="error"></p>
         </form>
@@ -140,7 +137,7 @@
                 </a>
             </li>
         </ul>
-        <p class="my-email">melaniesigrid@protonmail.com</p>
+        <p class="my-email">Made with ♥ by Melanie Baratto.</p>
     </footer>
 
     <script src="script.js"></script>

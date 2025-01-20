@@ -58,9 +58,8 @@ section {
     justify-content: space-between;
     overflow: hidden;
     gap: 2rem;
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 77px auto;
+    padding: 4rem 80px;
+    margin: 77px 0;
     background-image: url('images/pattern-light-bg.svg');
     background-size: cover;
     background-position: center;
@@ -149,7 +148,7 @@ section {
     justify-content: space-between;
     overflow: hidden;
     gap: 2rem;
-    padding: 4rem 2rem;
+    padding: 4rem 3rem;
     max-width: 1200px;
     margin: 77px auto;
     background-color: #FFCFCF;
@@ -225,30 +224,133 @@ section {
 }
 
 .contact {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding: 20px;
-    background-color: #FFFDEC;
+    flex-direction: column;
+    font-family: "Cousine", serif;
+    background-image: url('images/pattern-light-bg.svg');
 }
 
-form {
+.contact-title {
+    font-size: 40px;
+    margin: 2.5rem;
+    background: linear-gradient(to right, #b97b52, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#contactForm {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+
+label {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 5px;
 }
 
 input,
 textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #86A788;
-    background-color: #FFFDEC;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #111;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #111;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    height: 120px;
+    resize: none;
 }
 
 .error {
     color: red;
-    font-size: 14px;
+    font-size: 1rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    #contactForm {
+        width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.navlink {
+    display: none;
+}
+
+.navlink:hover {
+    font-size: 27px;
+}
+
+.hamburger {
+    color: white;
+    font-size: 2rem;
+    margin-left: auto;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1.5rem auto 0 auto;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    }
+
+footer ul li {
+    margin: 0.5rem;
+}
+
+.my-email {
+    font-family: "Cousine", serif;
 }
 
 a,
@@ -372,61 +474,6 @@ nav .logo {
     padding: 10px 24px;
     width: 100vh;
 }
-
-.navbar-links {
-    display: flex;
-    flex-direction: row;
-}
-
-.navlink {
-    display: none;
-}
-
-.navlink:hover {
-    font-size: 27px;
-}
-
-.hamburger {
-    color: white;
-    font-size: 2rem;
-    margin-left: auto;
-    cursor: pointer;
-    border: 0;
-    background-color: transparent;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-footer ul {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    }
-
-    footer ul li {
-        margin: 0.3rem;
-    }
-
-    .final-separator {
-        display: none;
-    }
-
-    .my-email {
-        color: #42526e;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 32px;
-    }
-
 
 @media (max-width: 768px) {
     .hero {
