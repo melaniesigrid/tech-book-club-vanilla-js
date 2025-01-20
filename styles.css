@@ -18,17 +18,6 @@ body {
     color: #333;
 }
 
-nav {
-    background-color: #333;
-    padding: 0 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #FFCFCF;
-}
-
-
 .nav-title {
     font-family: "Cousine", serif;
     font-weight: 700;
@@ -58,8 +47,7 @@ section {
     justify-content: space-between;
     overflow: hidden;
     gap: 2rem;
-    padding: 4rem 80px;
-    margin: 77px 0;
+    padding: 0 80px;
     background-image: url('images/pattern-light-bg.svg');
     background-size: cover;
     background-position: center;
@@ -227,7 +215,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding: 20px;
     flex-direction: column;
     font-family: "Cousine", serif;
@@ -305,6 +292,19 @@ textarea {
     }
 }
 
+nav {
+    background-color: #333;
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFCFCF;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 .navbar-links {
     display: flex;
     flex-direction: row;
@@ -366,13 +366,6 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-nav {
-    position: absolute;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
 }
 
 nav .mainMenu {
@@ -462,18 +455,6 @@ nav .logo {
     flex-direction: row;
 }
 
-.navbar {
-    color: #28352f;
-    font-weight: 600;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: flex-start;
-    max-height: 45px;
-    padding: 10px 24px;
-    width: 100vh;
-}
 
 @media (max-width: 768px) {
     .hero {
