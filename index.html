@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Book Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@200..900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/baa3f51658.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"></a>
+            <div class="nav-container">
+                <i class="fas fa-book"></i>
+                <span class="nav-title">techBookClub</span></a>
+            </div>
+        </div>
+        <div class="openMenu hamburger-container">
+            <a aria-label="Open menu" class="hamburger">≡</a>
+        </div>
+        <ul class="mainMenu navbar-links" id="mainmenu">
+            <li>
+                <a href="#home" class="navlink portfolio-nav">Home</a>
+            </li>
+            <li>
+                <a href="#features" class="navlink">Features</a>
+            </li>
+            <li>
+                <a href="#contact" class="navlink">Contact</a>
+            </li>
+            <li>
+                <div class="closeMenu">
+                    <i class="fas fa-times icons"></i>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Join</span> the <br>
+                <span class="gradient-text">ultimate</span> tech <br>
+                book <span class="bold-text">club</span>
+            </h1>
+            <p class="hero-description">
+                Turn your reading time into learning time with fellow tech enthusiasts.
+                Get curated recommendations, join vibrant discussions, and level up
+                your skills one chapter at a time.
+            </p>
+            <button class="hero-button" aria-label="View Membership Options">REVIEW MEMBERSHIP OPTIONS ↓</button>
+            <div class="hero-stats">
+                <img src="images/image-avatars.webp" alt="A group of users who joined the book club" class="avatar-group">
+                <span class="star-rating">⭐⭐⭐⭐⭐</span>
+                <p class="hero-joined-text">200+ developers joined already</p>
+            </div>
+        </div>
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/image-hero-mobile.webp" media="(max-width: 768px)">
+                <img src="images/image-hero-desktop.webp" alt="Three people discussing technology books in a modern workspace.">
+            </picture>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature-block">
+            <div class="feature-image">
+                <picture>
+                    <source srcset="images/image-read-together-mobile.webp" media="(max-width: 600px)">
+                    <img src="images/image-read-together-desktop.webp" alt="People reading together">
+                </picture>
+            </div>
+            <div class="feature-text">
+                <h2 class="feature-title">Read together, <br> grow together</h2>
+                <ul class="feature-list">
+                    <li>✔️ Monthly curated tech reads selected by industry experts.</li>
+                    <br>
+                    <li>✔️ Virtual and in-person meetups for deep-dive discussions.</li>
+                    <br>
+                    <li>✔️ Early access to new tech book releases.</li>
+                    <br>
+                    <li>✔️ Author Q&A sessions with tech thought leaders.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name: <input type="text" id="name" name="name" aria-required="true"></label>
+            <label for="email">Email: <input type="email" id="email" name="email" aria-required="true"></label>
+            <label for="message">Message: <textarea id="message" name="message" aria-required="true"></textarea></label>
+            <button type="submit" class="hero-button">Submit</button>
+            <p id="error-message" class="error"></p>
+        </form>
+    </section>
+    <footer>
+        <ul class="social-links footer-social">
+            <li>
+                <a aria-label="mail" class="yes-style" href="mailto:melaniesigrid@protonmail.com" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li>
+                <a aria-label="Linkedin" class="yes-style" href="https://www.linkedin.com/in/melaniesigrid/"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a aria-label="Medium" class="yes-style" href="https://medium.com/@melaniesigrid" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-medium-m"></i>
+                </a>
+            </li>
+            <li>
+                <a aria-label="GitHub" class="yes-style" href="https://github.com/melaniesigrid" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+            </li>
+            <li>
+                <a aria-label="AngelList" class="yes-style" href="https://angel.co/u/melanie-sigrid-arellano-baratto"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-angellist"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="my-email">Made with ♥ by Melanie Baratto.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
