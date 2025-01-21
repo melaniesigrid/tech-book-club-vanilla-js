@@ -21,7 +21,7 @@ cd tech-book-club
 # Open the index.html file, Go Live in VsCode
 ```
 
-# Screenshot
+## Screenshot
 
 ![Desktop Screenshot](./images/screenshot.png)
 
